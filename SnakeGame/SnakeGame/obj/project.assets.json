@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ruslan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Ruslan.Uteshev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ruslan\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
+      "projectUniqueName": "C:\\Users\\Ruslan.Uteshev\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
       "projectName": "SnakeGame",
-      "projectPath": "C:\\Users\\Ruslan\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
-      "packagesPath": "C:\\Users\\Ruslan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ruslan\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\obj\\",
+      "projectPath": "C:\\Users\\Ruslan.Uteshev\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\SnakeGame.csproj",
+      "packagesPath": "C:\\Users\\Ruslan.Uteshev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ruslan.Uteshev\\Desktop\\SnakeGame\\SnakeGame\\SnakeGame\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Ruslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Ruslan.Uteshev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/coins/_packaging/CoinsConstructionCloudTests/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
