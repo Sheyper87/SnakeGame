@@ -8,7 +8,6 @@ namespace SnakeGame
 {
     internal class VerticalLines : Figure
     {
-        List<Point> pList;
         
         public VerticalLines(int x, int yLow, int yHigh, char sym)
         {

@@ -9,17 +9,31 @@ namespace SnakeGame
         static void Main(string[] args)
         {
             Point p1 = new Point(1, 3, '*');
-            p1.Draw();
+            //p1.Draw();
 
             Point p2 = new Point(4, 5, '#');
 
 
-            p2.Draw();
+            //p2.Draw();
 
-            HorizontalLine line = new HorizontalLine(5, 10, 4, '+');
-            VerticalLines line1 = new VerticalLines(5, 2, 23, '*');
-            line.Drow();
-            line1.Drow();
+            HorizontalLine upline = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downline = new HorizontalLine(0, 78, 24, '+');
+            VerticalLines rightline = new VerticalLines(0, 0, 24, '+');
+            VerticalLines leftline = new VerticalLines(78, 0, 24, '+');
+            
+
+            
+            
+
+            upline.Drow();
+            downline.Drow();
+            rightline.Drow();
+            leftline.Drow();
+
+
+            Point p = new Point( 2, 3, '*' );
+            Snake snake = new Snake( p, 4, Direction.RIGHT );
+            snake.Drow();
 
 
             Console.ReadLine();
