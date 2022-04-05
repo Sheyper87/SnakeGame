@@ -7,8 +7,10 @@ namespace SnakeGame
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+           
             Point p1 = new Point(1, 3, '*');
             //p1.Draw();
 
@@ -36,18 +38,22 @@ namespace SnakeGame
             Snake snake = new Snake( p, 3, Direction.RIGHT );
             snake.Drow();
             snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
+
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+                }
+                Thread.Sleep(300);
+                snake.Move();
 
 
-            Console.ReadLine();
+
+
+                
+            }
             
         }
     }
