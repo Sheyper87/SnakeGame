@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace SnakeGame
 {
@@ -32,11 +33,22 @@ namespace SnakeGame
 
 
             Point p = new Point( 2, 3, '*' );
-            Snake snake = new Snake( p, 4, Direction.RIGHT );
+            Snake snake = new Snake( p, 3, Direction.RIGHT );
             snake.Drow();
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
 
 
             Console.ReadLine();
+            
         }
     }
 }
