@@ -39,22 +39,8 @@ namespace SnakeGame
             snake.Drow();
             snake.Move();
 
-            while (true)
-            {
-                if (Console.KeyAvailable)
-                {
-                    ConsoleKeyInfo key = Console.ReadKey();
-                    snake.HandleKey(key.Key);
-                }
-                Thread.Sleep(300);
-                snake.Move();
-
-
-
-
-                
-            }
-            FoodCreator foodCreator = new FoodCreator(80, 25, '$');
+       
+            FoodCreator foodCreator = new FoodCreator(80, 25, '%');
             Point food = foodCreator.CreateFood();
             food.Draw();
 
@@ -69,6 +55,14 @@ namespace SnakeGame
                 {
                     snake.Move();
                 }
+                Thread.Sleep(100);
+
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+                }
+
             }
             
         }
